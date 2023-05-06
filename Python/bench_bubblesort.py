@@ -1,6 +1,5 @@
 #burbuliuko rikiavimo algoritmo implementacija 'Python' programavimo kalboje
-import random
-import sys
+
 def bubbleSort(arr):
     n = len(arr)
  
@@ -9,14 +8,26 @@ def bubbleSort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
  
-def CreateRandomNumberArray(amount):
-    return [random.randint(0, sys.maxsize) for _ in range(amount)]
- 
-if __name__ == "__main__":
-  arr = CreateRandomNumberArray(1000)
+def bubble_sort():
+  arr = [5, 1, 4, 2, 8]
  
   bubbleSort(arr)
  
   print("Sorted array is:")
   for i in range(len(arr)):
       print("%d" % arr[i], end=" ")
+
+def bubble_sort1():
+  arr = [5, 1, 4, 2, 8]
+ 
+  bubbleSort(arr)
+ 
+  #print("Sorted array is:")
+  for i in range(len(arr)):
+      print("%d" % arr[i], end=" ")
+
+
+
+__benchmarks__ = [
+    (bubble_sort1, bubble_sort, "sorting bubbles")
+]
