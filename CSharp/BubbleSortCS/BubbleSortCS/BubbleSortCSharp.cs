@@ -1,7 +1,7 @@
 using System;
  
 class burbuliukas {
-    static void bubbleSort(int[] arr)
+    public void bubbleSort(int[] arr)
     {
         int n = arr.Length;
         for (int i = 0; i < n - 1; i++)
@@ -13,7 +13,7 @@ class burbuliukas {
                 }
     }
 
-    static void printArray(int[] arr)
+    public void printArray(int[] arr)
     {
         int n = arr.Length;
         for (int i = 0; i < n; ++i)
@@ -21,11 +21,11 @@ class burbuliukas {
         Console.WriteLine();
     }
 
-    public static void Main()
-    {
-        int[] arr = { 5, 1, 4, 2, 8};
-        bubbleSort(arr);
-        Console.WriteLine("Sutvarkytas masyvas");
-        printArray(arr);
-    }
+    //public static void Main()
+    //{
+    //    int[] arr = { 5, 1, 4, 2, 8};
+    //    bubbleSort(arr);
+    //    Console.WriteLine("Sutvarkytas masyvas");
+    //    printArray(arr);
+    //}
 }
