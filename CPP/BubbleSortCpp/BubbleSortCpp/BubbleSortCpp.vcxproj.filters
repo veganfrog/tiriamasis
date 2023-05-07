@@ -19,4 +19,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\benchmark.lib" />
+    <Library Include="..\benchmark_main.lib" />
+  </ItemGroup>
 </Project>

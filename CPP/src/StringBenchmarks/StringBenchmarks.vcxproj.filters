@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\git\tiriamasis\CPP\src\StringBenchmarks\StringBenchmarks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\git\tiriamasis\CPP\src\StringBenchmarks\StringBenchmarks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\git\tiriamasis\CPP\src\StringBenchmarks\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CD4B68E9-1453-38A1-8343-8442299A6202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{658C04DD-BD45-35F7-BF8D-4D5F30BCD28D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
