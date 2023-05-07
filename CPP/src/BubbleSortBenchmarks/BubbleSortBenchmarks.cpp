@@ -50,5 +50,5 @@ void RunBubbleSort(benchmark::State& state)
     }
 }
 // Register the function as a benchmark
-BENCHMARK(RunBubbleSort);
+BENCHMARK(RunBubbleSort)->Iterations(100);
 BENCHMARK_MAIN();
