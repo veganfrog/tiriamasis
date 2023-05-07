@@ -2,7 +2,6 @@
 //
 #include <iostream>
 #include <benchmark/benchmark.h>
-#include "StringBenchmarks.h"
 
 using namespace std;
 

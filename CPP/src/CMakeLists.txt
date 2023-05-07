@@ -7,3 +7,4 @@ project ("Benchmarks")
 
 # Include sub-projects.
 add_subdirectory ("BubbleSortBenchmarks")
+add_subdirectory ("StringBenchmarks")
