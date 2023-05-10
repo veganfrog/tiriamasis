@@ -56,7 +56,7 @@ void RunBubbleSort()
     // cout << "Sutvarkytas masyvas \n";
     //printArray(arr, N);
 }
-BENCHMARK("bubblesort")
+BENCHMARK("bubblesort",Settings().Attempts(10))
 {
     RunBubbleSort();
 }
