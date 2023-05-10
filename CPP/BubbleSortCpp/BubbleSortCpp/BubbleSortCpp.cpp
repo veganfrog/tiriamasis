@@ -29,7 +29,7 @@ int* CreateRandomNumberArray()
 
     srand(time(NULL));
 
-    for (int i = 0;i < INT_MAX;i++)
+    for (int i = 0;i < 1000;i++)
     {
         int num = rand();
         arr[i] = num;
@@ -37,21 +37,19 @@ int* CreateRandomNumberArray()
 
     return arr;
 }
-//void RunBubbleSort()
-//{
-//    for (auto _ : state) {
-//        int* arr;
-//        arr = CreateRandomNumberArray();
-//        //int arr[] = { 5, 1, 4, 2, 8 };
-//        int N = sizeof(arr) / sizeof(arr[0]);
-//        bubbleSort(arr, N);
-//        // cout << "Sutvarkytas masyvas \n";
-//        //printArray(arr, N);
-//    }
-//}
-BENCHMARK("sin")
+void RunBubbleSort()
 {
-    sin(123.456);
+    int* arr;
+    arr = CreateRandomNumberArray();
+    //int arr[] = { 5, 1, 4, 2, 8 };
+    int N = sizeof(1000) / sizeof(arr[0]);
+    bubbleSort(arr, N);
+    // cout << "Sutvarkytas masyvas \n";
+    //printArray(arr, N);
+}
+BENCHMARK("bubblesort")
+{
+    RunBubbleSort();
 }
 
 BENCHMARK_MAIN()
